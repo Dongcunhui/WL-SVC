@@ -1,4 +1,4 @@
-# Wavelet-Based-Learned-Scalable-Video-Coding (WL-SVC)
+# Wavelet-Based Learned Scalable Video Coding (WL-SVC)
 ## Overall
 This repo provides the official implementation of "Wavelet-Based Learned Scalable Video Coding". It is just a preliminary version, and details will be added later.  
 
