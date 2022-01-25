@@ -5,9 +5,8 @@ The overall framework of WL-SVC is shown in the figure below. It consists of two
 <img src="https://user-images.githubusercontent.com/48936648/150902487-f2288ab0-0a8d-4cb9-90b9-8b918dd59854.png" width="500px">
 
 ## How To Train
-1. The residual coding module and inverse wavelet transform module are trainable, and the code in . The input 
-1. Use [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) to get metion vector and mask.
+1. The residual coding module and inverse wavelet transform module are trainable, and the code is in train folder. The input are original frames, motion vector and mask. You can obtain the motion vector and mask by modifying [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) yourself or refer to my modifications in the Interframe EZBC folder.
 2. input original frame, MV and mask into python.
 3. the MV bits is grenerate by [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) and the residual bits is generate by python.
 4. Have fun!
-## How To Test
+
