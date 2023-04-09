@@ -14,6 +14,6 @@ The input are original frames, motion vector and mask. You can obtain the motion
 
 ## How To Test
 The test consists of two steps,
-1. Use the modified Interframe EZBC-JP2K code to obtain the motion vector and the index of the reference frame, and use Interframe EZBC-JP2K to encode them into a code stream. (You can modify [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) yourself or refer to my modifications in the Interframe EZBC folder.)
+1. Use the modified Interframe EZBC-JP2K code to obtain the motion vector and the mask of the reference frame(index of the reference frame), and use Interframe EZBC-JP2K to encode them into a code stream. (You can modify [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) yourself or refer to my modifications in the Interframe EZBC folder.)
 
 2. Use the test.py code in the test folder to code a video. The input is the YUV component of the original video, the motion vector and the mask of the reference frame. The input data of an example is stored in the [network disk](https://drive.google.com/drive/folders/1wVlfJ1tH1UdyttPOwYA2lURqYHJm5hQK?usp=share_link), and after downloading, place it in the test folder. The trained model is stored in the [network disk](https://drive.google.com/drive/folders/1cGloGAZZtUtqbWPC5-SZBsm8tD9RUm1U?usp=sharing), including the entropy coding model (model_all_encode.pth) and the wavelet inverse transform model (wave_post.pth). After downloading, place them in the test folder. (The code is implemented by pytorch and requires torch version >= 1.6.)
