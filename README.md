@@ -8,7 +8,7 @@ The overall framework of WL-SVC is shown in the figure below. It consists of two
 ## How To Train
 The code is implemented by pytorch and requires torch version >= 1.6.  
 
-The residual coding module and inverse wavelet transform module are trainable, and the code is in train folder.
+The temporal subband coding module and inverse wavelet transform module are trainable, and the code is in train folder.
 
 The input are original frames, motion vector and mask. You can obtain the motion vector and mask by modifying [Interframe EZBC-JP2K](https://ecse.rpi.edu/interframevideocoding/) yourself or refer to my modifications in the Interframe EZBC folder.
 
